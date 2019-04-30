@@ -1,0 +1,9 @@
+.nav {
+  grid-area: n;
+  background-color:#e9ebee;
+  border-radius: 1px;
+}
+
+.item.active {
+  color: blue;
+}
