@@ -3,8 +3,9 @@ import s from './MyPosts.module.css'
 import Posts from './Posts/Posts';
 
 const MyPosts = (props) => {
-    let postdata =
-    props.posts.map(m => <Posts message={m.message} like={m.like} dislike={m.dislike} />);
+   
+    let postdata = 
+    props.state.posts .map(m => <Posts message={m.message} like={m.like} dislike={m.dislike}/>);
 
     return (
         <div className={s.postitems}>

@@ -6,10 +6,10 @@ import MessageImage from './MessageImg';
 
 const Dialogs = (props) => {
     let MessageData =
-        props.Message.map(m => <MessageImage message={m.message} />);
+        props.state.Message.map(m => <MessageImage message={m.message} />);
 
     let DialogData =
-        props.user.map(d => <Users name={d.name} id={d.id} />);
+        props.state.user.map(d => <Users name={d.name} id={d.id} />);
     return (
         <div className={s.dialog}>
             <div >
