@@ -2,14 +2,14 @@ import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo';
+import MyPostsContainer from './MyPosts/MyPostContainer';
 
 const Profile = (props) => {
 
-  
   return (
     <div >
-      <ProfileInfo />
-      <MyPosts state={props.state}/>
+      <ProfileInfo profile={props.profile}/>
+      <MyPostsContainer store={props.store}   />
     </div>
 
   );

@@ -1,10 +1,17 @@
 import React from 'react';
-import s from'./News.module.css';
 
-const News=(props)=>{
-    return(
+let mass =['as', 'News2', 3];
+// let mass = [
+//             { capital: 'Sacramento' },
+//             { founded: '9 сентября 1850' },
+//             { population: '40000000' },
+//             { motto: 'Эврика' },
+//             { anthem: 'I Love You, California' }
+// ];
+const News = (props) => {
+    return (
         <div>
-            News
+            {mass[1]}
         </div>
 
     );
